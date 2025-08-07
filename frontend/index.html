@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/desktop.css" rel="stylesheet">
+    <link href="assets/css/mobile.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/easing/EasePack.min.js"></script>
+
+    <script src="js/formulario.js"></script>
+    <script src="js/index.js" defer></script>
+    <script src="js/downloadcv.js" defer></script>
+    <script src="js/menu.js"></script>
+    <title>Jhon Ross - Portfólio</title>
+
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <button class="nav-toggle">
+                <i class="bi bi-list"></i> 
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home">
+        <!-- Fundo interativo da seção Home -->
+        <div id="large-header-home" class="large-header">
+            <canvas id="demo-canvas-home"></canvas>
+        </div>
+        <div class="home-conteudo">
+          <div class="avatar-container">
+            <img src="assets/img/jhon.png" alt="Avatar" class="avatar">
+          </div>
+      
+          <div class="texto-container">
+            <h1 class="titulo">Jhon Ross</h1>
+            <h2 class="subtitulo">Full Stack Developer & Web Designer</h2>
+            <div class="botoes">
+                <a href="assets/pdfs/Jhon-Ross.pdf" class="botao" id="download-cv-button"><i class="fas fa-download"></i> Download CV</a>
+                <a href="https://wa.me/5541997317190?text=Olá%20vi%20seu%20Portfólio" class="botao" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-envelope"></i> Contato
+                </a>                
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre">
+        <!-- Fundo interativo da seção Sobre -->
+        <div id="large-header-sobre" class="large-header">
+            <canvas id="demo-canvas-sobre"></canvas>
+        </div>
+        <div class="container">
+            <h2>Sobre Mim</h2>
+            <div class="descricao-pessoal">
+                <div class="descricao-pessoal-conteudo">
+                    <p>
+                        Sou um profissional apaixonado por tecnologia, com experiência em desenvolvimento de software e soluções inovadoras. Possuo domínio em linguagens como <strong>Python</strong>, <strong>JavaScript</strong>, <strong>TypeScript</strong> e <strong>Lua</strong>, além de experiência em desenvolvimento web com <strong>HTML</strong>, <strong>CSS</strong>, <strong>Flask</strong> e <strong>React</strong>.
+                    </p>
+                    <p>
+                        Também tenho habilidades em design com <strong>CorelDRAW</strong> e <strong>Photoshop</strong>, e aplico ferramentas de IA, como <strong>Stable Diffusion</strong> e <strong>OpenCV</strong>, em projetos práticos. Valorizo o equilíbrio entre vida pessoal e profissional, acreditando que essa conexão impulsiona a criatividade e uma abordagem inovadora.
+                    </p>
+                    <p>
+                        "Comprometo-me com a excelência e a atualização constante, buscando sempre entregar soluções de alta qualidade alinhadas às demandas do mercado."
+                    </p>
+                </div>
+                <hr class="separador">
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Projetos -->
+    <section id="projetos">
+        <div class="container">
+            <h2>Projetos</h2>
+
+        <!-- Projeto 1 - DealHunter -->
+        <article class="projeto">
+            <h3>DealHunter</h3>
+            <p><strong>DealHunter</strong> é uma plataforma desenvolvida em <strong>Python</strong> que utiliza <strong>Web Scraping</strong> para localizar automaticamente as melhores ofertas em sites de e-commerce.  
+            Com o uso do <strong>Selenium</strong> em modo headless, a ferramenta navega de forma eficiente e extrai dados em tempo real, eliminando a necessidade de buscas manuais.  
+            Ideal para quem deseja acompanhar promoções de forma prática e automatizada.</p>
+            <a href="https://github.com/Jhon-Ross/DealHunter" class="btn" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
+        </article>
+
+            <!-- Mais projetos podem ser adicionados abaixo -->
+        </div>
+    </section>
+
+
+    <!-- Seção Skills -->
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid"> 
+                <div class="skill-box">
+                    <i class="fa-brands fa-python"></i>
+                    <h3>Python</h3>
+                    <p>Automação, Web Scraping, APIs e IA.</p>
+                </div>
+                <div class="skill-box">
+                    <i class="fa-brands fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <p>Desenvolvimento Frontend e Backend.</p>
+                </div>
+                <div class="skill-box">
+                    <i class="fa-brands fa-react"></i>
+                    <h3>React</h3>
+                    <p>Criação de interfaces web dinâmicas.</p>
+                </div>
+                <div class="skill-box">
+                    <i class="fa-brands fa-html5"></i>
+                    <h3>HTML & CSS</h3>
+                    <p>Estruturação e estilização de sites.</p>
+                </div>
+                <div class="skill-box">
+                    <i class="fa-brands fa-git"></i>
+                    <h3>Git</h3>
+                    <p>Controle de versão e colaboração.</p>
+                </div>
+                <div class="skill-box">
+                    <i class="fa-brands fa-bootstrap"></i>
+                    <h3>Bootstrap</h3>
+                    <p>Desenvolvimento responsivo ágil.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- Seção Contato -->
+<section id="contato">
+    <!-- Fundo interativo da seção Contato -->
+    <div id="large-header-contato" class="large-header">
+        <canvas id="demo-canvas-contato-contato"></canvas>
+    </div>
+    <div class="container">
+        <h2>Contato</h2>
+        <p>Gostou do meu trabalho? Entre em contato comigo!</p>
+        <form id="form-contato" action="https://SEU_BACKEND.railway.app/enviar" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required autocomplete="off" placeholder="Seu nome" class="form-input">
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required autocomplete="off" placeholder="Seu e-mail" class="form-input">
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Sua mensagem" autocomplete="off" class="form-textarea"></textarea> <!-- Adicionado autocomplete="off" -->
+
+            <div id="mensagem-erro" class="error-message"></div> <!-- Elemento para mensagens de erro -->
+
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </div>
+</section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Jhon Ross. Todos os direitos reservados.</p>
+            <p>
+                <a href="https://github.com/Jhon-Ross" target="_blank">GitHub</a> |
+                <a href="https://www.linkedin.com/in/jhon-ross/" target="_blank">LinkedIn</a> |
+                <a href="mailto:jhonross.lp@outlook.com?subject=Contato&body=Olá, vi seu Portfólio...">E-mail</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
