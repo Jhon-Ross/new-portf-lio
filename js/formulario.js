@@ -17,13 +17,13 @@ document.addEventListener('DOMContentLoaded', function() {
             mensagem: mensagem
         };
 
-        // Envia os dados para o back-end (Flask)
-        fetch('/enviar', {
+        // ✅ Substitua pela URL real do seu backend na Railway:
+        fetch('https://backend-portf-lio-production.up.railway.app/enviar', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json', // Indica que estamos enviando JSON
+                'Content-Type': 'application/json',
             },
-            body: JSON.stringify(formData) // Converte os dados para JSON
+            body: JSON.stringify(formData)
         })
         .then(response => {
             if (!response.ok) {
@@ -33,13 +33,13 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .then(data => {
             if (data.success) {
-                alert(data.message); // Exibe mensagem de sucesso
-                form.reset(); // Limpa o formulário
+                alert(data.message);
+                form.reset();
             } else {
                 if (mensagemErro) {
-                    mensagemErro.textContent = data.message; // Exibe mensagem de erro na página
+                    mensagemErro.textContent = data.message;
                 } else {
-                    alert(data.message); // Exibe mensagem de erro em um alerta
+                    alert(data.message);
                 }
             }
         })
